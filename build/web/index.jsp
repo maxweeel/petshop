@@ -1,3 +1,16 @@
+<%-- 
+    Document   : index
+    Created on : 3 de mai. de 2023, 10:00:45
+    Author     : QI
+--%>
+
+<%
+    if(session.getAttribute("userNameSession") != null){
+        response.sendRedirect("home.jsp");
+    }
+%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
